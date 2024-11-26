@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/style_2.css">
+    <link rel="stylesheet" href="src/libs/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="src/libs/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="src/libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.15.3/css/all.css"
+          integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+<div id="game">
+    <div id="sky"></div>
+    <div id="mountains">
+        <div class="mountain"></div>
+        <div class="mountain"></div>
+        <div class="mountain"></div>
+        <div class="mountain"></div>
+    </div>
+    <div id="terrain"></div>
+    <div id="fog" class="hidden"></div>
+    <canvas id="road"></canvas>
+    <div id="cars"></div>
+    <div id="car" class="player car"></div>
+    <div id="ui">
+        <div id="panel">
+            <div id="km"><a></a><a>0</a><a>0</a><a>0</a><a>0</a><a>0</a></div>
+            <div id="lap"><a>1</a></div>
+            <div id="position"><a>P</a><a>2</a><a>0</a><a>0</a></div>
+        </div>
+    </div>
+</div>
+<p>
+    <button id="left">◀️</button>
+    <button id="up">⏏️</button>
+    <button id="right">▶️</button>
+</p>
+<p><button id="click">Click to start!</button></p>
+<p>Left/Right Arrows or A/D to steer and<br>
+    Up Arrow, W or Space to accelerate </p>
+
+<table>
+    <tr>
+        <td class="cell" id="0"></td>
+        <td class="cell" id="1"></td>
+        <td class="cell" id="2"></td>
+    </tr>
+    <tr>
+        <td class="cell" id="3"></td>
+        <td class="cell" id="4"></td>
+        <td class="cell" id="5"></td>
+    </tr>
+    <tr>
+        <td class="cell" id="6"></td>
+        <td class="cell" id="7"></td>
+        <td class="cell" id="8"></td>
+    </tr>
+</table>
+
+<div class="endgame">
+    <div class="text"></div>
+    <button onclick="startGame()">Replay</button>
+</div>
+
+
+
+
+    <script src="src/libs/jquery/jquery.js"></script>
+    <script src="src/libs/fancybox/jquery.fancybox.min%20(1).js"></script>
+    <script src="src/libs/owl-carousel/owl.carousel.min.js"></script>
+    <script src="src/js/script.js"></script>
+</body>
+
